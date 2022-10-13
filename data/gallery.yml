@@ -1,77 +1,34 @@
 title: "Gallery"
 style: "style2 medium lightbox onscroll-fade-in"
 content: |
-  This is a <strong>Gallery</strong> element. It can behave as a lightbox (when given the <code>lightbox</code> class), and you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-gallery">details</a>).
+  lorem
 pictures:
-  - title: "Title"
+  - title: "AWS Solution Architect - Associate"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    image: "images/gallery/fulls/aws-certified-cloud-practitioner.png"
+    thumb: "images/gallery/thumbs/aws-certified-cloud-practitioner.png"
+    button: "Details"
+    isWebSite: True
+    href: https://www.credly.com/badges/768c4354-a12c-4513-8ca9-729f80e5183d/public_url
+
+  - title: "AWS Solution Architect - Associate"
+    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    image: "images/gallery/fulls/aws-certified-solutions-architect-associate.png"
+    thumb: "images/gallery/thumbs/aws-certified-solutions-architect-associate.png"
+    button: "Details"
+    isWebSite: True
+    href: https://www.credly.com/badges/d6fc4f12-77b2-44d4-8b89-564fafd5f068/public_url
+
+  - title: "Uniluv 一生伴伴"
     content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
     image: "images/gallery/fulls/01.jpg"
     thumb: "images/gallery/thumbs/01.jpg"
-    button: "Details"
+    button: "Visit website"
+    isWebSite: True
+    href: https://uniluv.com.tw/
 
   - title: "Title"
     content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
     image: "images/gallery/fulls/02.jpg"
     thumb: "images/gallery/thumbs/02.jpg"
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/03.jpg"
-    thumb: "images/gallery/thumbs/03.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/04.jpg"
-    thumb: "images/gallery/thumbs/04.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/05.jpg"
-    thumb: "images/gallery/thumbs/05.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/06.jpg"
-    thumb: "images/gallery/thumbs/06.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/07.jpg"
-    thumb: "images/gallery/thumbs/07.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/08.jpg"
-    thumb: "images/gallery/thumbs/08.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/09.jpg"
-    thumb: "images/gallery/thumbs/09.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/10.jpg"
-    thumb: "images/gallery/thumbs/10.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/11.jpg"
-    thumb: "images/gallery/thumbs/11.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/12.jpg"
-    thumb: "images/gallery/thumbs/12.jpg"
-    button: "Details"
-    
