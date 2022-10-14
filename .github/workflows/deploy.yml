@@ -28,4 +28,11 @@ jobs:
 
       - name: Deploy
         run: |
+          ls
+          echo "====="
+          ls public
           aws s3 sync --acl public-read ./public s3://${{ secrets.S3BUCKET_NAME }} --delete
+
+      - name: Create Invalidation
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
