@@ -9,6 +9,9 @@ jobs:
   Deploy-to-Cloudformation:
     runs-on: ubuntu-latest
     steps:
+      - name: Get Source Code
+        uses: actions/checkout@v3
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -16,15 +19,15 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION_ID }}
 
-        - name: setup hugo
-          uses: peaceiris/actions-hugo@v2
-          with:
-            hugo-version: latest
-            extended: true
+      - name: setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
 
-        - name: Hugo Build
-          working-directory: ./
-          run: hugo --minify --gc --cleanDestinationDir
+      - name: Hugo Build
+        working-directory: ./
+        run: hugo --minify --gc --cleanDestinationDir
 
       - name: Deploy
         run: |
