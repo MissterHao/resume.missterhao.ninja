@@ -1,6 +1,9 @@
 name: Deploy new hugo build to Cloud Environment
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - "master"
+
 
 jobs:
   Deploy-to-Cloudformation:
@@ -26,4 +29,4 @@ jobs:
       - name: Deploy
         run: |
           cd public
-          aws cp ./public s3:://${{ secrets.S3BUCKET_NAME }} --recursive
+          aws s3 sync ./public s3:://${{ secrets.S3BUCKET_NAME }} --delete
