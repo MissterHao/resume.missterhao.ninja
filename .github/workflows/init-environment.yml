@@ -15,4 +15,6 @@ jobs:
 
       - name: Deploy cloudformation script
         run: |
+          mkdir /workspace
+          cp aws/init.yaml /workspace/init.yaml
           aws cloudformation create-stack --stack-name missterhao-resume-stack --template-body file://$PWD/aws/init.yaml
