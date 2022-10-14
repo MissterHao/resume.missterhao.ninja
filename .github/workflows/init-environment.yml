@@ -6,6 +6,9 @@ jobs:
   Initialize-cloudformation-stack:
     runs-on: ubuntu-latest
     steps:
+      - name: Get Source Code
+        uses: actions/checkout@v3
+        
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
