@@ -13,13 +13,16 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION_ID }}
 
-      - name: Deploy cloudformation script
+      - name: debug ls
         run: |
           ls
-          pwd
-          cd ..
-          echo "==================="
-          ls
-          pwd
-          cd ..
+      - name: debug ls aws
+        run: |
+          ls aws
+      - name: debug abs ls aws
+        run: |
+          ls $PWD/aws
+
+      - name: Deploy cloudformation script
+        run: |
           aws cloudformation create-stack --stack-name missterhao-resume-stack --template-body file://$PWD/aws/init.yaml
