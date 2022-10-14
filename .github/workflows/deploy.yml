@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Get Source Code
         uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -34,7 +37,7 @@ jobs:
           echo "====="
           ls themes
           echo "====="
-          
+
           aws s3 sync --acl public-read ./public s3://${{ secrets.S3BUCKET_NAME }} --delete
 
       - name: Create Invalidation
