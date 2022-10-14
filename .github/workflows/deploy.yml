@@ -1,9 +1,9 @@
-name: Initialize Cloud Environment
+name: Deploy new hugo build to Cloud Environment
 on:
   workflow_dispatch:
 
 jobs:
-  Deplot with Cloudformation:
+  Deploy-to-Cloudformation:
     runs-on: ubuntu-latest
     steps:
       - name: Configure AWS credentials

@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Deplot with Cloudformation:
+  Initialize-cloudformation-stack:
     runs-on: ubuntu-latest
     steps:
       - name: Configure AWS credentials
