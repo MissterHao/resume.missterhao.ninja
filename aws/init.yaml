@@ -1,0 +1,113 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  Initialize S3 static website environment
+# Metadata:
+# Parameters:
+#   HostedZone:
+#     Type: String
+#     Description: The DNS name of an existing Amazon Route 53 hosted zone
+#     AllowedPattern: (?!-)[a-zA-Z0-9-.]{1,63}(?<!-)
+#     ConstraintDescription: must be a valid DNS zone name.
+
+Mappings:
+  RegionToS3WebsiteSuffix:
+    us-east-1:
+      Suffix: .s3-website-us-east-1.amazonaws.com
+    us-west-1:
+      Suffix: .s3-website-us-west-1.amazonaws.com
+    us-west-2:
+      Suffix: .s3-website-us-west-2.amazonaws.com
+    eu-west-1:
+      Suffix: .s3-website-eu-west-1.amazonaws.com
+    ap-northeast-1:
+      Suffix: .s3-website-ap-northeast-1.amazonaws.com
+    ap-northeast-2:
+      Suffix: .s3-website-ap-northeast-2.amazonaws.com
+    ap-southeast-1:
+      Suffix: .s3-website-ap-southeast-1.amazonaws.com
+    ap-southeast-2:
+      Suffix: .s3-website-ap-southeast-2.amazonaws.com
+    ap-south-1:
+      Suffix: .s3-website-ap-south-1.amazonaws.com
+    us-east-2:
+      Suffix: .s3-website-us-east-2.amazonaws.com
+    sa-east-1:
+      Suffix: .s3-website-sa-east-1.amazonaws.com
+    cn-north-1:
+      Suffix: .s3-website.cn-north-1.amazonaws.com.cn
+    eu-central-1:
+      Suffix: .s3-website.eu-central-1.amazonaws.com
+
+Resources:
+  ResumeAppS3Bucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      AccessControl: PublicRead
+      BucketName: missterhao-resume-app
+      VersioningConfiguration:
+        Status: Enabled
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+      Tags:
+        - Key: project
+          Value: resume-website-app
+        - Key: role
+          Value: static-website
+        - Key: structure
+          Value: static-website
+      LoggingConfiguration:
+        DestinationBucketName: !Ref LoggingBucket
+        LogFilePrefix: resume-access-logs
+
+  LoggingBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      AccessControl: LogDeliveryWrite
+
+
+  # WebsiteCDN:
+  #   Type: AWS::CloudFront::Distribution
+  #   Properties:
+  #     DistributionConfig:
+  #       Comment: CDN for S3-backed website
+  #       Aliases:
+  #       - !Join ['', [!Ref 'AWS::StackName', !Ref 'AWS::AccountId', ., !Ref 'AWS::Region',
+  #           ., !Ref 'HostedZone']]
+  #       Enabled: 'true'
+  #       DefaultCacheBehavior:
+  #         ForwardedValues:
+  #           QueryString: 'true'
+  #         TargetOriginId: only-origin
+  #         ViewerProtocolPolicy: allow-all
+  #       DefaultRootObject: index.html
+  #       Origins:
+  #       - CustomOriginConfig:
+  #           HTTPPort: '80'
+  #           HTTPSPort: '443'
+  #           OriginProtocolPolicy: http-only
+  #         DomainName: !Join ['', [!Ref 'ResumeAppS3Bucket', !FindInMap [RegionToS3WebsiteSuffix, !Ref 'AWS::Region', Suffix]]]
+  #         Id: only-origin
+
+  # WebsiteDNSName:
+  #   Type: AWS::Route53::RecordSet
+  #   Properties:
+  #     HostedZoneName: !Join ['', [!Ref 'HostedZone', .]]
+  #     Comment: CNAME redirect custom name to CloudFront distribution
+  #     Name: !Join ['', [!Ref 'AWS::StackName', !Ref 'AWS::AccountId', ., !Ref 'AWS::Region', ., !Ref 'HostedZone']]
+  #     Type: CNAME
+  #     TTL: '900'
+  #     ResourceRecords:
+  #     - !GetAtt [WebsiteCDN, DomainName]
+
+Outputs:
+  S3WebsiteURL:
+    Value: !GetAtt
+      - ResumeAppS3Bucket
+      - WebsiteURL
+    Description: URL for website hosted on S3
+  # WebsiteURL:
+  #   Value: !Join ['', ['https://', !Ref 'WebsiteDNSName']]
+  #   Description: The URL of the newly created website
+

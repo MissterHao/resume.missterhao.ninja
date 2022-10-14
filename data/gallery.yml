@@ -1,6 +1,12 @@
 title: "Gallery"
-style: "style2 medium lightbox onscroll-fade-in"
+style: "style2 medium lightbox onscroll-fade-in small"
 content: |
+  lorem
+  lorem
+  lorem
+  lorem
+  lorem
+  lorem
   lorem
 pictures:
   - title: "AWS Solution Architect - Associate"
