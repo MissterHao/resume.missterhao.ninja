@@ -24,7 +24,7 @@ jobs:
 
       - name: Hugo Build
         working-directory: ./
-        run: hugo --minify --gc --cleanDestinationDir
+        run: hugo
 
       - name: Deploy
         run: |
