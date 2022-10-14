@@ -31,6 +31,10 @@ jobs:
           ls
           echo "====="
           ls public
+          echo "====="
+          ls themes
+          echo "====="
+          
           aws s3 sync --acl public-read ./public s3://${{ secrets.S3BUCKET_NAME }} --delete
 
       - name: Create Invalidation
