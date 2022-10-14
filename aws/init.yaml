@@ -44,7 +44,7 @@ Resources:
     DeletionPolicy: Retain
     Properties:
       AccessControl: PublicRead
-      BucketName: missterhao-resume-app
+      BucketName: missterhao-resume-website
       VersioningConfiguration:
         Status: Enabled
       WebsiteConfiguration:
