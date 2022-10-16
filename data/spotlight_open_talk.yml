@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "spotlight onscroll-image-fade-in - style5 fullscreen orient-left content-align-left image-position-center"
+id: "open_talk"
+title : "Community"
+content: |
+  I love communnity.
+button:
+  label: "Learn More"
+  link: "#"
+image: "images/spotlight01.jpg"

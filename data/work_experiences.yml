@@ -1,0 +1,50 @@
+
+
+companies:
+  - name: Uniluv
+    jobs:
+      - position: Cloud Architect
+        content:
+          - Design and realize AWS cloud architecture
+          - Closely cooperate with different team and catch up with latest project status
+          - Design Restful API and write API Docs
+          - Write Unittest
+        achievement: 
+
+      - position: Backend Engineer
+        content:
+          - Write Unittest
+        achievement: 
+
+      - position: CTO 
+        content: 
+          - Write Unittest
+        achievement: 
+
+  - name: Leadtek
+    jobs:
+      - position: Backend Engineer
+        content:
+          - Introduce Drone CI/CD and integrate with gitea. Reducing 100% manually release time and decrease human error.
+          - Development and maintenance saga pattern for inference API
+          - Refactor legacy code to frontend-backend separation
+        achievement: 
+
+      - position: DevOps ( CI/CD Pipeline Maintainer )
+        content:
+          - Write Unittest
+        achievement: 
+
+  - name: YuanZe University
+    jobs:
+      - position: CTO | Cloud Architect | Backend Engineer
+        content:
+          - Write Unittest
+        achievement: 
+        
+  - name: SOHO
+    jobs:
+      - position: CTO | Cloud Architect | Backend Engineer
+        content:
+          - Write Unittest
+        achievement: 

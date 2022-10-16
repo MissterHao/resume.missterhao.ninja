@@ -1,0 +1,27 @@
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <h2>Work Experiences</h2>
+        <p></p>
+        <div class="index align-left">
+
+            
+            {{ range .companies }}
+                {{ partial "work_experiences_company" . }}
+                <!-- <section>
+                    <header>
+                        <h3>{{ .company }}</h3>
+                    </header>
+                    <div class="content">
+                        <hr />
+
+                        <header>
+                            <h3>Heading with a Subtitle</h3>
+                            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+                        </header>
+                        <p></p>
+                    </div>
+                </section> -->
+            {{ end }}
+        </div>
+    </div>
+</section>

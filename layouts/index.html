@@ -1,13 +1,9 @@
 {{ define "main" }}
 
 	{{ partial "banner" site.Data.banner }}
-	{{ partial "spotlight" site.Data.spotlight1 }}
-	{{ partial "spotlight" site.Data.spotlight2 }}
-	<!-- {{ partial "spotlight" site.Data.spotlight3 }} -->
+	{{ partial "spotlight" site.Data.spotlight_open_talk }}
 	{{ partial "gallery" site.Data.gallery }}
-	{{ partial "items" site.Data.items }}
-	<!-- {{ partial "elements" . }} -->
-	<!-- {{ partial "elements_reference" . }} -->
+	{{ partial "work_experiences" site.Data.work_experiences }}
 	{{ partial "contact" site.Data.contact }}
 	{{ partial "template/footer" . }}
 
