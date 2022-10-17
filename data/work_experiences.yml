@@ -37,14 +37,20 @@ companies:
 
   - name: YuanZe University
     jobs:
-      - position: CTO | Cloud Architect | Backend Engineer
+      - position: Research Analyst 
         content:
-          - Write Unittest
+          - "Web Crawler: Web crawler with tor proxies for data collection"
+          - "Web Crawler: Web crawler with requests and selenium"
+          - "Server Management: MySQL Database Management"
+          - "Text Analysis: LDA Topic Modeling"
+          - "Computer Vision: dlib facial landmarks"
         achievement: 
         
   - name: SOHO
     jobs:
-      - position: CTO | Cloud Architect | Backend Engineer
+      - position: Self employee engineer
         content:
-          - Write Unittest
+          - Automate web crawler
+          - Cross-platform desktop GUI application
+          - Android application for internal department tools
         achievement: 
