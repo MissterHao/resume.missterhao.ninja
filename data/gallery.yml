@@ -21,8 +21,8 @@ pictures:
 
   - title: "Uniluv 一生伴伴"
     content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/01.jpg"
-    thumb: "images/gallery/thumbs/01.jpg"
+    image: "images/gallery/fulls/uniluv-logo.jpg"
+    thumb: "images/gallery/thumbs/uniluv-logo.jpg"
     button: "Visit website"
     isWebSite: True
     href: https://uniluv.com.tw/
