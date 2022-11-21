@@ -1,0 +1,13 @@
+
+
+
+<header>
+    <h3>{{ .position }}</h3>
+    
+    <ul>
+        {{ range $content_item := .content}}
+        <li>{{ $content_item }}</li>
+        {{ end }}
+    </ul>
+</header>
+<p></p>
