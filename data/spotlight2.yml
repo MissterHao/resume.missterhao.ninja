@@ -1,9 +1,12 @@
 ####################### Spotlight #########################
-style: "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
-title : "Embrace Open Source！"
+style: "style1 orient-left content-align-left image-position-center onscroll-image-fade-up onscroll-content-fade-up"
+title : "Embrace Open Source and Side porjects！"
 content: |
-  <h6>Image from <a href="https://www.wired.com/2013/03/github/">www.wired.com</a></h6>
+  <p>
+  I love to join community and contribute to open source projects. <br>
+  <b>Ruscode</b> is one of my open source projects. It helps me a lot when I have to manage tons of project folder by vscode.
+  </p>
 button:
-  label: "Checkout my Github and awesome Projects"
+  label: "Checkout my Github"
   link: "https://github.com/MissterHao"
-image: "images/socialite1.png"
+image: "images/ruscode-banner.png"

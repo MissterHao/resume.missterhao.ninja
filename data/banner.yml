@@ -2,10 +2,10 @@
 style: "style3 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
 title : "Hao-Wei, Li"
 subtitle: |
-  AWS Certified Solution Architect | Backend Developer <br>
-  Python | Rust | Devops
+  AWS Certified Solution Architect | Backend Developer | Devops<br>
+  Python | Rust
 content : |
-  Having great enthusiasm on designing cloud architecture. 
+  Having great enthusiasm on designing cloud architecture.
 button:
   label : "Get to know me!"
   link : "#open_talk"

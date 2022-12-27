@@ -1,5 +1,5 @@
 ####################### Spotlight #########################
-style: "spotlight onscroll-image-fade-in - style5 fullscreen orient-left content-align-left image-position-center"
+style: "spotlight onscroll-image-fade-in - style5 fullscreen orient-left content-align-left image-position-center onscroll-content-fade-up"
 id: "open_talk"
 title : "Community"
 content: |

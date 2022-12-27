@@ -1,13 +1,13 @@
 title: "Certification"
 style: "style2 lightbox onscroll-fade-in small"
 content: |
-  
+
 pictures:
   - title: "AWS Solution Architect - Associate"
     content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
     image: "images/gallery/fulls/aws-certified-cloud-practitioner.png"
     thumb: "images/gallery/thumbs/aws-certified-cloud-practitioner.png"
-    button: "Details"
+    button: "Watch my badge"
     isWebSite: True
     href: https://www.credly.com/badges/768c4354-a12c-4513-8ca9-729f80e5183d/public_url
 
@@ -15,20 +15,22 @@ pictures:
     content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
     image: "images/gallery/fulls/aws-certified-solutions-architect-associate.png"
     thumb: "images/gallery/thumbs/aws-certified-solutions-architect-associate.png"
-    button: "Details"
+    button: "Watch my badge"
     isWebSite: True
     href: https://www.credly.com/badges/d6fc4f12-77b2-44d4-8b89-564fafd5f068/public_url
 
   - title: "Uniluv 一生伴伴"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    content: "A web application for special couple to create their own wedding invitation website!"
     image: "images/gallery/fulls/uniluv-logo.jpg"
     thumb: "images/gallery/thumbs/uniluv-logo.jpg"
     button: "Visit website"
     isWebSite: True
     href: https://uniluv.com.tw/
 
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/02.jpg"
-    thumb: "images/gallery/thumbs/02.jpg"
-    button: "Details"
+  - title: "Ruscode"
+    content: "A ultimate VSCode project management tool."
+    image: "images/gallery/fulls/ruscode-banner.png"
+    thumb: "images/gallery/thumbs/ruscode-banner.png"
+    button: "Github"
+    isWebSite: True
+    href: https://github.com/MissterHao/ruscode
