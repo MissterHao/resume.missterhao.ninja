@@ -1,10 +1,13 @@
 ####################### Spotlight #########################
 style: "style1 orient-left content-align-left image-position-center onscroll-image-fade-up onscroll-content-fade-up"
-title : "Embrace Open Source and Side porjects！"
+title : "Embrace Open Source！"
 content: |
   <p>
-  I love to join community and contribute to open source projects. <br>
-  <b>Ruscode</b> is one of my open source projects. It helps me a lot when I have to manage tons of project folder by vscode.
+    I love to join community and contribute to open source projects. <br>
+    <ul>
+      <li><b>Ruscode</b> is one of my open source projects. It helps me a lot when I have to manage tons of project folder by vscode.</li>
+      <li><b>Django-Dysession</b>, another open source project. A django extension by using AWS DynamoDB as a session backend </li>
+    </ul>
   </p>
 button:
   label: "Checkout my Github"
