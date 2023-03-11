@@ -27,6 +27,15 @@ pictures:
     isWebSite: True
     href: https://uniluv.com.tw/
 
+  - title: "Django-Dysession"
+    content: "A django extension by using AWS DynamoDB as a session backend."
+    image: "images/gallery/fulls/django-dysession-banner.png"
+    thumb: "images/gallery/thumbs/django-dysession-banner.png"
+    button: "Github"
+    isWebSite: True
+    href: https://github.com/MissterHao/django-dysession
+
+
   - title: "Ruscode"
     content: "A ultimate VSCode project management tool."
     image: "images/gallery/fulls/ruscode-banner.png"

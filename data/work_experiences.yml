@@ -3,22 +3,13 @@
 companies:
   - name: Uniluv
     jobs:
-      - position: Cloud Architect
+      - position: Cloud Architect | Backend Engineer | CTO
         content:
-          - Design and realize AWS cloud architecture
+          - Design and realize AWS cloud architecture. Continously optimize the architecture in order to lower the price of aws.
           - Closely cooperate with different team and catch up with latest project status
           - Design Restful API and write API Docs
-          - Write Unittest
-        achievement: 
-
-      - position: Backend Engineer
-        content:
-          - Write Unittest
-        achievement: 
-
-      - position: CTO 
-        content: 
-          - Write Unittest
+          - Use AWS CloudWatch Logs and CloudWatch Agent to monitor EC2 Status
+          - Design resilience architecture
         achievement: 
 
   - name: Leadtek
