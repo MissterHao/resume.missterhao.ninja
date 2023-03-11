@@ -4,20 +4,37 @@ content: |
 
 pictures:
   - title: "AWS Solution Architect - Associate"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
+    content: |
+      Earners of this certification have a comprehensive understanding of AWS services and technologies. 
+      They demonstrated the ability to build secure and robust solutions using architectural design principles based on customer requirements. 
+      Badge owners are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.
+    image: "images/gallery/fulls/aws-certified-solutions-architect-associate.png"
+    thumb: "images/gallery/thumbs/aws-certified-solutions-architect-associate.png"
+    button: "Verify my badge"
+    isWebSite: True
+    href: https://www.credly.com/badges/d6fc4f12-77b2-44d4-8b89-564fafd5f068/public_url
+
+  - title: "AWS Solution Architect - Associate"
+    content: |
+      Earners of this certification have a comprehensive understanding of application life-cycle management. 
+      They demonstrated proficiency in writing applications with AWS service APIs, AWS CLI, and SDKs; using containers; and deploying with a CI/CD pipeline. 
+      Badge owners are able to develop, deploy, and debug cloud-based applications that follow AWS best practices.
+    image: "images/gallery/fulls/aws-certified-developer-associate.png"
+    thumb: "images/gallery/thumbs/aws-certified-developer-associate.png"
+    button: "Verify my badge"
+    isWebSite: True
+    href: https://www.credly.com/badges/c335e799-2091-4066-9ea5-01e11b594e88/public_url
+
+  - title: "AWS Certified Cloud Practitioner"
+    content: |
+      "I have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge."
+      "I am able to identify essential AWS services necessary to set up AWS-focused projects"
     image: "images/gallery/fulls/aws-certified-cloud-practitioner.png"
     thumb: "images/gallery/thumbs/aws-certified-cloud-practitioner.png"
-    button: "Watch my badge"
+    button: "Verify my badge"
     isWebSite: True
     href: https://www.credly.com/badges/768c4354-a12c-4513-8ca9-729f80e5183d/public_url
 
-  - title: "AWS Solution Architect - Associate"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/aws-certified-solutions-architect-associate.png"
-    thumb: "images/gallery/thumbs/aws-certified-solutions-architect-associate.png"
-    button: "Watch my badge"
-    isWebSite: True
-    href: https://www.credly.com/badges/d6fc4f12-77b2-44d4-8b89-564fafd5f068/public_url
 
   - title: "Uniluv 一生伴伴"
     content: "A web application for special couple to create their own wedding invitation website!"
