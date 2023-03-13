@@ -9,5 +9,5 @@ content : |
 button:
   label : "Get to know me!"
   link : "#open_talk"
-image : "images/banner.jpg"
+image : "images/me.jpg"
 
