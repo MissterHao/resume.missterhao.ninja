@@ -23,17 +23,5 @@
 	<noscript><link rel="stylesheet" href="{{ ($noscript | minify).RelPermalink }}" /></noscript>
 	{{end}}
 
-
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHD0ZHS6XL"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-WHD0ZHS6XL');
-	</script>
-
-
+	{{ template "_internal/google_analytics.html" . }}
 </head>
